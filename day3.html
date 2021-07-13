@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<title>Document</title>
+<script>
+// THIS FUNCTION IS USED FOR ADDITION OF TWO NUMBERS
+function add(){
+var a,b,c;
+a = Number(document.getElementById("number1").value);
+b = Number(document.getElementById("number2").value);
+c = a + b
+ans.innerHTML=c
+}
+// THIS FUNCTION IS USED FOR SUBTRACTION OF TWO NUMBERS
+function subtract(){
+var a,b,c;
+a = Number(document.getElementById("number1").value);
+b = Number(document.getElementById("number2").value);
+c = a - b
+ans.innerHTML=c
+}
+// THIS FUNCTION IS USED FOR MULTPLICATION OF TWO NUMBERS
+function multiply(){
+var a,b,c;
+a = Number(document.getElementById("number1").value);
+b = Number(document.getElementById("number2").value);
+c = a * b
+ans.innerHTML=c
+}
+// THIS FUNCTION IS USED FOR DIVIDE OF TWO NUMBERS
+function divide(){
+var a,b,c;
+a = Number(document.getElementById("number1").value);
+b = Number(document.getElementById("number2").value);
+c = a / b
+ans.innerHTML=c
+}
+</script>
+</head>
+<body>
+First number: <input  id="number1"><br>
+Second number: <input id="number2"><br>
+<button onclick="add()">+</button>
+<button onclick="subtract()">-</button>
+<button onclick="multiply()">*</button>
+<button onclick="divide()">/</button>
+<p id=ans></p>
+</body>
